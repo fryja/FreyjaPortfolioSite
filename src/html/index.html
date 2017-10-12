@@ -1,9 +1,8 @@
-{% import "base.nunjucks" %}
+{% extends "base.nunjucks" %}
 
 {% set title = "Robyn Stotter Portfolio" %}
 
-{% block header %}{% endblock %}
-
+{% block main %}
 <div class="slider">
 		<div><img src="images/slider/suijin.jpg" /></div>
 		<div><img src="images/slider/mossrock.jpg" /></div>
@@ -127,6 +126,4 @@
 	
 	
     </section> <!-- portfolio -->
-
-
-{% block footer %}{% endblock %}
+{% endblock %}

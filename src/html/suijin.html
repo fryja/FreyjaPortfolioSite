@@ -1,4 +1,4 @@
-{% include "base.nunjucks" %}
+{% extends "base.nunjucks" %}
 
 {% set title = "Suijin - Robyn Stotter Portfolio" %}
 {% set gamemode = "ARENA" %}
@@ -10,25 +10,48 @@
 
 {% set downloadlink = "#" %}
 
-{% block header %}{% endblock %}
 
-{% block bodystart %}{% endblock %}
 
+{% block main %}
+
+<section id="content">
+    
+    <h2><span>{{ gamemode }}</span> {{ mapname }}</h2>
+    
     <section class="description">
     <h4>Project Description</h4>
     <p>
-    Suijin is a large arena map for Valve's Team Fortress 2 set in and around a cliffside shinto temple. It is a traditional arena map designed with the ethos of "clip only if it's necessary," meaning for most locations in the map, if the player can see it, they can get there. This allows for numerous strateigic possibilities in a game mode that is infamous for it's lack of strategy. Often, this results in players trying to find new and creative ways to navigate the map, resulting in more replayability and a different match every time, rather than the rather static stratergies existant in other maps.
+    Rust is a payload map developed as a collaboration between <a href="http://www.joeradak.com/">Joe 'Fr0z3n' Radak</a> and myself. Joe was in charge of the layout and gameplay, whilst I artpassed the map as well as created custom assets for it.
     </p>
     <p>
-    Suijin is the flagship map for the <a href="http://japan.tf2maps.net">Japan theme</a>, a pack of custom models, materials and particles for Valve's Team Fortress 2, developed for this map by myself and <a href="http://steamcommunity.com/id/earkham/">E-Arkham.</a>
-    </p>
-    <p>
-    Suijin also exists as a koth gametype, with a few design changes to make it more suitable to this mode, such as extra spawn exits and health/ammo pickups. However, the map was originally intended for arena and the arena mode drove it's design.
+    Rust is a iron ore mine and processing complex, set in north Western Australia. The style combines both realistic Australian landscapes - large, long ore trains, eroded rolling hills and large flat shrublands, with the already established desert style from Valve's Team Fortress 2. The result is a unique take on a theme with many variations already.
     </p>
     </section><!-- description -->
+    
+    <aside class="details">
+        <h4>Project Details</h4>
+        <ul>
+            <li><strong>Role:</strong> {{ role }}</li>
+            <li><strong>Platform:</strong> {{ platform }}</li>
+            <li><strong>Engine:</strong> {{ engine }}</li>
+        </ul>
+        <p>
+        <span class="glyphicon glyphicon-download-alt"></span><a href="{{ downloadlink }}"> DOWNLOAD</a>
+        </p>
+    </aside>
+    <a href="images/screenshots/suijin/suijin1.jpg"><img src="images/screenshots/suijin/suijin1.jpg"></a>
+    <a href="images/screenshots/suijin/suijin2.jpg"><img src="images/screenshots/suijin/suijin2.jpg"></a>
+    <a href="images/screenshots/suijin/suijin3.jpg"><img src="images/screenshots/suijin/suijin3.jpg"></a>
+    <a href="images/screenshots/suijin/suijin4.jpg"><img src="images/screenshots/suijin/suijin4.jpg"></a>
+    <a href="images/screenshots/suijin/suijin5.jpg"><img src="images/screenshots/suijin/suijin5.jpg"></a>
+
+    
+    
+    
+    
+
+     
+    <div class="clearfix"></div> 
+    </section> <!-- content -->
 	
-{% block aside %}{% endblock %}
-
-{% block bodyend %}{% endblock %}
-
-{% block footer %}{% endblock %}
+{% endblock %}
